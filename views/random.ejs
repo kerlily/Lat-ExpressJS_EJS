@@ -6,9 +6,12 @@
     <title>ranodm part</title>
 </head>
 <body>
-    <h1>
-        ini adalah number random <%= angka %>
-        
-    </h1>
+    <h1>ini adalah number random <%= angka %></h1>
+    <% if (angka % 2 === 0) { %>
+        <h1>angka genap</h1>
+   <% }else
+   {%><h1>angka ganjil</h1><% } %>
+   <hr>
+   <h3>that number is: <%= angka%2 === 0 ? 'genap' : 'ganjil'%></h3>
 </body>
 </html>
